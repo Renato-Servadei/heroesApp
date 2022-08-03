@@ -7,7 +7,8 @@ import { Heroe } from '../../interfaces/heroes.interface';
   templateUrl: './listado.component.html',
   styles: [`
   mat-card {
-    margin-top: 20px;
+    margin-top: 18px;
+    margin-bottom: 10px;
   }`]
 })
 export class ListadoComponent implements OnInit {
