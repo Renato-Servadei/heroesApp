@@ -33,9 +33,15 @@ fxLayout.xs="column">
       <input matInput type="url" [(ngModel)]="heroe.alt_img" required />
     </mat-form-field>
     <br />
+    <div fxLayout="flex">
     <button mat-raised-button color="primary" (click)="guardar()">
       <mat-icon>edit</mat-icon> Guardar
     </button>
+    <span class="spacer"></span>
+    <button mat-raised-button color="warn" *ngIf="heroe.id" (click)="borrar()">
+      <mat-icon>remove</mat-icon> Borrar
+    </button>
+  </div>
   </div>
 
   <div fxFlex="50">
