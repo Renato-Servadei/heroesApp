@@ -4,6 +4,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { AuthRoutingModule } from './auth-routing.module';
+import { MaterialModule } from '../material/material.module';
 
 
 
@@ -14,7 +15,8 @@ import { AuthRoutingModule } from './auth-routing.module';
   ],
   imports: [
     AuthRoutingModule,
-    CommonModule
+    CommonModule, 
+    MaterialModule
   ]
 })
 export class AuthModule { }
